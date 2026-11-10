@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Contact page demonstration for Northstar Advisory, with a client-ready form placeholder and backend integration note." />
+    <meta name="theme-color" content="#10243a" />
+    <title>Contact | Northstar Advisory</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="concept-note">Preliminary demonstration concept · Northstar Advisory is a temporary brand name</div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Northstar Advisory home"><img src="assets/logo-horizontal-dark.svg" width="216" height="48" alt="Northstar Advisory" /></a>
+        <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation"><span></span><span></span></button>
+        <nav class="primary-nav" id="primary-navigation" aria-label="Main navigation">
+          <a href="index.html">Home</a><a href="about.html">About Us</a><a href="services.html">Services</a><a href="approach.html">Our approach</a><a href="insights.html">Insights</a><a class="nav-contact" href="contact.html" aria-current="page">Contact <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+    <main id="main">
+      <section class="page-hero">
+        <img src="images/office-building.webp" alt="Contemporary office buildings in a downtown district" width="1500" height="1000" fetchpriority="high" />
+        <div class="container"><div class="breadcrumb"><a href="index.html">Home</a><span aria-hidden="true">/</span><span>Contact</span></div><span class="eyebrow eyebrow-light">Contact Northstar</span><h1>Let’s start with<br /><em>a conversation.</em></h1><p>Share a little about the question or opportunity you have in mind.</p></div>
+      </section>
+      <section class="section-pad" id="enquiry">
+        <div class="container">
+          <div class="section-heading"><div><span class="eyebrow">Make an enquiry</span><h2>Tell us what’s<br /><em>on your mind.</em></h2></div><p>This demonstration form checks entries in your browser only. It will not send or store a message until a backend or WordPress form integration is configured.</p></div>
+          <div class="contact-layout">
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-field"><label for="full-name">Full name</label><input id="full-name" name="fullName" type="text" autocomplete="name" required minlength="2" maxlength="100" aria-describedby="full-name-error" /><span class="field-error" id="full-name-error" aria-live="polite"></span></div>
+              <div class="form-field"><label for="email">Email address</label><input id="email" name="email" type="email" autocomplete="email" required maxlength="254" aria-describedby="email-error" /><span class="field-error" id="email-error" aria-live="polite"></span></div>
+              <div class="form-field"><label for="company">Company name <span>(optional)</span></label><input id="company" name="company" type="text" autocomplete="organization" maxlength="120" /></div>
+              <div class="form-field"><label for="phone">Phone number <span>(optional)</span></label><input id="phone" name="phone" type="tel" autocomplete="tel" maxlength="40" /></div>
+              <div class="form-field form-field-wide"><label for="service">Service of interest</label><select id="service" name="service"><option value="">Select a proposed service (optional)</option><option>Management Consulting</option><option>Business Strategy</option><option>Business Development</option><option>Operational Improvement</option><option>Organizational Consulting</option><option>Strategic Planning</option><option>Other</option></select></div>
+              <div class="form-field"><label for="subject">Subject</label><input id="subject" name="subject" type="text" required minlength="3" maxlength="150" aria-describedby="subject-error" /><span class="field-error" id="subject-error" aria-live="polite"></span></div>
+              <div class="form-field form-field-wide"><label for="message">Message</label><textarea id="message" name="message" required minlength="10" maxlength="3000" aria-describedby="message-error"></textarea><span class="field-error" id="message-error" aria-live="polite"></span></div>
+              <div class="form-field form-field-wide consent-field"><label><input id="privacy-consent" name="privacyConsent" type="checkbox" required aria-describedby="privacy-consent-error" /> I understand this demonstration form does not transmit my information.</label><span class="field-error" id="privacy-consent-error" aria-live="polite"></span></div>
+              <p class="form-status form-field-wide" role="status" aria-live="polite"></p>
+              <div class="form-field-wide"><button class="button button-primary" type="submit">Send message <span aria-hidden="true">→</span></button><p class="form-disclaimer">Demo only: submission validates in this browser; no message is sent. Configure an approved WordPress form or secure backend, recipient, delivery, and spam protection before launch.</p></div>
+            </form>
+            <aside class="contact-info" aria-label="Contact information">
+              <span class="eyebrow">Contact information</span>
+              <h2>Details to be confirmed</h2>
+              <div class="contact-details-grid">
+                <div><strong>Email</strong><span>To be provided</span></div>
+                <div><strong>Phone</strong><span>To be provided</span></div>
+                <div><strong>Office location</strong><span>To be confirmed</span></div>
+                <div><strong>Business hours</strong><span>To be confirmed</span></div>
+              </div>
+              <p class="contact-note">Contact details are placeholders. No address, phone number, or email has been invented for this concept.</p>
+              <div class="map-placeholder" role="img" aria-label="Map area reserved for the confirmed business location"><div><strong>Map placeholder</strong>Location and map embed to be added after confirmation.</div></div>
+            </aside>
+          </div>
+        </div>
+      </section>
+      <section class="contact-band"><div class="container contact-inner"><div><span class="eyebrow eyebrow-light">Thank you for reaching out</span><h2>We look forward<br /><em>to hearing from you.</em></h2></div><a class="button button-primary" href="#enquiry">Contact us <span aria-hidden="true">↑</span></a></div></section>
+    </main>
+    <footer class="site-footer">
+      <div class="container footer-main"><div class="footer-brand"><a href="index.html" aria-label="Northstar Advisory home"><img src="assets/logo-horizontal-light.svg" width="216" height="48" alt="Northstar Advisory" /></a><p>A preliminary brand and website concept.<br />Company information is subject to confirmation.</p></div><div class="footer-links"><div><span class="footer-label">Explore</span><a href="about.html">About Us</a><a href="services.html">Services</a><a href="approach.html">Our approach</a><a href="insights.html">Insights</a></div><div><span class="footer-label">Contact</span><span>Business location: to be confirmed</span><a href="contact.html">Make an enquiry</a></div></div></div>
+      <div class="container footer-bottom"><span>© <span id="current-year"></span> Northstar Advisory · Demonstration concept</span><a href="#main">Back to top ↑</a></div>
+    </footer>
+  </body>
+</html>

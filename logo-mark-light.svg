@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" role="img" aria-labelledby="title">
+  <title id="title">Northstar compass mark</title>
+  <circle cx="80" cy="80" r="75" fill="#10243A"/>
+  <g fill="none" stroke="#C5A46D" stroke-width="3">
+    <path d="m80 19 8 48 45-16-37 29 37 29-45-16-8 48-8-48-45 16 37-29-37-29 45 16z"/>
+    <circle cx="80" cy="80" r="10" fill="#C5A46D" stroke="none"/>
+  </g>
+</svg>
